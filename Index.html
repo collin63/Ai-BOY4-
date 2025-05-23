@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI BOY4</title>
+    <style>
+      body {
+        background: #121212;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #3b82f6;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AI BOY4</h1>
+    <textarea id="script" rows="6" placeholder="Enter your story here..."></textarea>
+    <button onclick="generate()">Generate Video</button>
+    <p id="message"></p>
+
+    <script>
+      function generate() {
+        const script = document.getElementById('script').value.trim();
+        if (!script) {
+          document.getElementById('message').innerText = 'Please enter your story!';
+          return;
+        }
+        document.getElementById('message').innerText = 'Video generation coming soon!';
+      }
+    </script>
+  </body>
+</html>
